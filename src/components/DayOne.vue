@@ -105,7 +105,7 @@ export default {
       console.log(this.items + "," + this.items.length);
     },
     requestMock() {
-      api.get("/mock/number", null)
+      api.get("/mock/index")
       .then((value)=>{
         console.log(value)
       })

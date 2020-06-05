@@ -1,17 +1,17 @@
-const Mock = require('mockjs');
+import Mock from 'mockjs';
+
+import * as one from './mockData/one.json';
 
 // 设置拦截ajax请求的相应时间
 Mock.setup({
   timeout: '200-600'
 })
 
-let configArray = [];
+// 构建一个函数对象，返回mock数据
+const mockData = function () {
+  let data = null;
+  data = new Date('2018-09-21 10:00:00').getTime();
+  return { data, one }
+}
 
-Mock.mock('/mock/number', 'get', {
-  // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
-  'list|1-10': [{
-    // 属性 id 是一个自增数，起始值为 1，每次增 1
-    'id|+1': 1
-  }]
-},
-)
+Mock.mock('/mock/index', /post|get/i, mockData);

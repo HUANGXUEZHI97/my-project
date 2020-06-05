@@ -1,0 +1,10 @@
+{
+  "code": [
+    "vue",
+    "vuex",
+    "vue-router",
+    "vue/cli"
+  ],
+  "name": "黄小智",
+  "age": 24
+}
