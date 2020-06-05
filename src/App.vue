@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <DayOneDemo />
+
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
     DayOneDemo
   }
 };
+
 </script>
 
 <style>
