@@ -36,8 +36,13 @@
         </el-main>
         <el-footer>
           <el-switch v-model="show" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
-          <transition name="fade">
-            <p v-show="show">hello</p>
+          <transition
+            name="fade"
+            enter-active-class="animated bounceIn"
+            leave-active-class="animated bounceOut"
+            :duration="{enter:400, leave:400}"
+          >
+            <p v-if="show">hello</p>
           </transition>
         </el-footer>
       </el-container>
@@ -148,15 +153,15 @@ export default {
   display: block;
   width: 150px;
   height: 150px;
-  background-color: black;
+  background-color: white;
 }
 .article {
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: aquamarine;
 }
 
-.fade-enter-active,
+/* .fade-enter-active,
 .fade-leave-active{
   transition: opacity .5s;
 }
@@ -164,5 +169,5 @@ export default {
 .fade-enter,
 .fade-leave-to{
   opacity: 0;
-}
+} */
 </style>
