@@ -19,9 +19,9 @@ import mainBody from '../components/base//profile/mainBody';
 const constantRoutes = [
   {
     path: '/',
-    redirect: () => { //redirect可以是路径字符串也可以是
-      return '/aaa'//此处aaa是liveTwo的别名
-    }
+    // redirect: () => { //redirect可以是路径字符串也可以是
+    //   return '/aaa'//此处aaa是liveTwo的别名
+    // }
   },
   {
     path: '/liveOne',

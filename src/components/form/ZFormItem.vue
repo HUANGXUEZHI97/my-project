@@ -2,7 +2,7 @@
   <div>
     <label v-if="label">{{label}}</label>
     <slot></slot>
-    <p v-if="error">{{error}}</p>
+    <p v-if="error" class="error">{{error}}</p>
   </div>
 </template>
 
@@ -47,6 +47,7 @@ export default {
       return schema.validate({ [this.prop]: value }, errors => {
         if (errors) {
           this.error = errors[0].message;
+          console.log(errors);
         } else {
           this.error = "";
         }
@@ -57,4 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.error {
+  color: red;
+}
 </style>
