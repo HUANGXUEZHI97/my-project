@@ -3,7 +3,7 @@
     <el-container>
       <el-aside width="200px">Aside</el-aside>
       <el-container>
-        <el-header>
+        <el-header style="margin-bottom:100px">
           <h1>dayone</h1>
           <ins v-cloak>插值表达式：{{componentName}}</ins>
           <p v-text="'textContent'"></p>

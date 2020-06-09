@@ -10,7 +10,7 @@
     <br>
     <slot name="header">头部slot</slot>
     <br>
-    <slot name="default">我是后备插槽，数据在son内编写的，如果father中Son标签中间的内容为空，则我就显示出来</slot>
+    <slot name="default">我是后备插槽，数据在Son内编写的，如果father中Son标签中间的内容为空，则我就显示出来</slot>
     <br>
     <slot name="footer" :userMsg="sonMsg" unMsg="just msg">尾部slot</slot>
   </article>
