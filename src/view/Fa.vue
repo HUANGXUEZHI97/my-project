@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import Son from "../components/Son";
-import liveOne from "../components/liveOne";
-import liveTwo from "../components/liveTwo";
+import Son from "@/components/Son";
+import liveOne from "@/components/liveOne";
+import liveTwo from "@/components/liveTwo";
 
 export default {
   name: "father",

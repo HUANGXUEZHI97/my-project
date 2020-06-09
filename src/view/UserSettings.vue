@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Nav from "../components/base/Nav";
+import Nav from "@/components/base/Nav";
 
 export default {
   name: "UserSettings",

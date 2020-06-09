@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <el-switch v-model="show" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
-    <MyHelloWorld v-if="!show"></MyHelloWorld>
+    <fromExample></fromExample>
+    <!-- <el-switch v-model="show" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
+    <MyHelloWorld v-if="show"></MyHelloWorld>
     <DayOneDemo v-else></DayOneDemo>
     <Fa />
-    <!-- <a href="#/liveOne">foo</a>
-    <a href="#/liveTwo">bar</a>-->
+    <a href="#/liveOne">foo</a>
+    <a href="#/liveTwo">bar</a>
     <h3>下面是router：（当前路由已经将/ 重定向为/liveTwo）</h3>
     <router-link to="/liveTwo">liveTwo</router-link>
     <br />
@@ -30,16 +31,19 @@
     </transition>
     <el-button type="success" @click="routerPush">router.push</el-button>
     <el-button type="success" @click="goBack">goBack</el-button>
-    <el-button type="success" @click="routerReplace">routerReplace</el-button>
+    <el-button type="success" @click="routerReplace">routerReplace</el-button>-->
   </div>
 </template>
 
 <script>
 // import Vue from 'vue';
 
-import MyHelloWorld from "./view/MyHelloWorld";
-import DayOneDemo from "./view/demo/day-one-demo";
-import Fa from "./view/Fa";
+// import MyHelloWorld from "@/view/MyHelloWorld";
+// import DayOneDemo from "@/view/demo/day-one-demo";
+// import Fa from "@/view/Fa";
+
+//第一节课：form表单组件化
+import fromExample from "@/view/form";
 
 //全局mixin会给每个组件都加上，影响非常大，建议定义 mixin 常量来指定混入具体的组件
 
@@ -78,9 +82,10 @@ export default {
     }
   },
   components: {
-    MyHelloWorld,
-    DayOneDemo,
-    Fa
+    // MyHelloWorld,
+    // DayOneDemo,
+    // Fa,
+    fromExample
   }
 };
 </script>

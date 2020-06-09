@@ -52,7 +52,7 @@
 
 <script>
 import Vue from "vue";
-import api from "../api/index";
+import api from "@/api/index";
 
 Vue.filter("msgFormat", function(msg, arg1, arg2) {
   return msg.replace(/单纯/g, arg1 + arg2);

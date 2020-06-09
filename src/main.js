@@ -9,6 +9,9 @@ import animated from 'animate.css';
 Vue.use(ElementUI)
 Vue.use(animated)
 
+import create from '@/utils/create';
+Vue.prototype.$create = create
+
 require('./mock/index.js');
 
 
