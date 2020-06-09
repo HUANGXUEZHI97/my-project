@@ -3,11 +3,11 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import liveOne from '../components/liveOne';
-import liveTwo from '../components/liveTwo';
-import liveThr from '../components/liveThr';
-import liveFour from '../components/liveFour';
-import liveOther from '../components/liveOther';
+import liveOne from '../components/exercise/liveOne';
+import liveTwo from '../components/exercise/liveTwo';
+import liveThr from '../components/exercise/liveThr';
+import liveFour from '../components/exercise/liveFour';
+import liveOther from '../components/exercise/liveOther';
 import notFound from '../view/404.vue';
 
 import UserSettings from '../view/UserSettings';

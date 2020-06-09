@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <fromExample></fromExample>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <from-example></from-example>
     <!-- <el-switch v-model="show" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
     <MyHelloWorld v-if="show"></MyHelloWorld>
     <DayOneDemo v-else></DayOneDemo>
@@ -38,6 +39,7 @@
 <script>
 // import Vue from 'vue';
 
+// import HelloWorld from "./components/HelloWorld.vue";
 // import MyHelloWorld from "@/view/MyHelloWorld";
 // import DayOneDemo from "@/view/demo/day-one-demo";
 // import Fa from "@/view/Fa";
@@ -82,6 +84,7 @@ export default {
     }
   },
   components: {
+    // HelloWorld,
     // MyHelloWorld,
     // DayOneDemo,
     // Fa,

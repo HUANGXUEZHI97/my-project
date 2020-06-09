@@ -20,13 +20,13 @@
 import ZInput from "@/components/form/ZInput";
 import ZFormItem from "@/components/form/ZFormItem";
 import ZForm from "@/components/form/ZForm";
-import Notice from "@/components/Notice";
+import Notice from "@/components/form/Notice";
 
 export default {
   data() {
     return {
       model: {
-        username: "hxz",
+        username: "tom",
         password: ""
       },
       rules: {
