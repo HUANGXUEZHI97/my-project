@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from './kvuex';
 
 Vue.use(Vuex)
 
@@ -8,23 +8,23 @@ export default new Vuex.Store({
     counter: 0
   },
   getters: {
-    doubleCounter(state) {
-      return state.counter * 2
+    doubleCounter: state => {
+      return state.counter * 2;
     }
   },
   mutations: {
-    add(state) {
+    add(state, ) {
       state.counter++
-      // this.state
     }
   },
   actions: {
-    add({ commit }) {
+    add({ commit }, ) {
       setTimeout(() => {
-        commit('add')
+        commit('add');
       }, 1000);
     }
   },
   modules: {
   }
+
 })
