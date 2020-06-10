@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import VueRouter from './kvue-router'
 import Home from '@/components/class2/Home'
 
 // 1.应用插件
