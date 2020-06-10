@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <from-example></from-example>
+    <!-- 复习总结Day1-5 -->
     <!-- <el-switch v-model="show" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
     <MyHelloWorld v-if="show"></MyHelloWorld>
     <DayOneDemo v-else></DayOneDemo>
@@ -33,19 +33,32 @@
     <el-button type="success" @click="routerPush">router.push</el-button>
     <el-button type="success" @click="goBack">goBack</el-button>
     <el-button type="success" @click="routerReplace">routerReplace</el-button>-->
+
+    <!-- 第一节课：form表单组件化 -->
+    <!-- <from-example></from-example>
+    <communication></communication>
+    <slots></slots>-->
   </div>
 </template>
 
 <script>
 // import Vue from 'vue';
 
+//复习总结Day1-5：
 // import HelloWorld from "./components/HelloWorld.vue";
 // import MyHelloWorld from "@/view/MyHelloWorld";
 // import DayOneDemo from "@/view/demo/day-one-demo";
 // import Fa from "@/view/Fa";
 
 //第一节课：form表单组件化
-import fromExample from "@/view/form";
+// import fromExample from "@/components/classOne/form";
+// import communication from "@/components/classOne/communication";
+// import slots from "@/components/classOne/slots";
+
+//第二节课：
+
+
+
 
 //全局mixin会给每个组件都加上，影响非常大，建议定义 mixin 常量来指定混入具体的组件
 
@@ -88,7 +101,10 @@ export default {
     // MyHelloWorld,
     // DayOneDemo,
     // Fa,
-    fromExample
+    //第一节课：
+    // fromExample,
+    // communication,
+    // slots
   }
 };
 </script>

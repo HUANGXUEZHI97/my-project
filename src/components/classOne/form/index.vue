@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import ZInput from "@/components/form/ZInput";
-import ZFormItem from "@/components/form/ZFormItem";
-import ZForm from "@/components/form/ZForm";
-import Notice from "@/components/form/Notice";
+import ZInput from "@/components/classOne/form/ZInput";
+import ZFormItem from "@/components/classOne/form/ZFormItem";
+import ZForm from "@/components/classOne/form/ZForm";
+import Notice from "@/components/classOne/form/Notice";
 
 export default {
   data() {

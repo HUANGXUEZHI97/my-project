@@ -6,7 +6,7 @@
 
 
 <script>
-import Dayone from '../../components/DayOne';
+import Dayone from '../../components/exercise/DayOne';
 
 export default {
   name:'DayOnedemo',

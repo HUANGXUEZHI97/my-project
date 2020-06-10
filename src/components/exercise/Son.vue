@@ -36,7 +36,12 @@ export default {
   },
   methods: {
     getUnprop() {
+      //获取非prop特性属性
+      //方法一：
       console.log(this.$el.getAttribute("unprop"));
+      //方法二：
+      // v-bind="$attrs" 该方法获取非prop特性属性，直接在标签上使用即可；
+      // 同样的：v-on="$listeners" 获取未绑定的事件
     },
     myclick() {
       this.$emit("func", this.sonMsg);
