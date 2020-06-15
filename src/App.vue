@@ -1,29 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <!-- <ReView /> -->
-    <!-- <Class1 /> -->
-    <Class2 />
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-// import ReView from "@/view/ReView.vue";
-// import Class1 from "@/view/class/Class1.vue";
-import Class2 from "@/view/class/Class2.vue";
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: "App",
-  data() {
-    return {};
-  },
-  methods: {},
+  name: 'App',
   components: {
-    // ReView,
-    // Class1,
-    Class2
+    HelloWorld
   }
-};
+}
 </script>
 
 <style>
@@ -34,15 +24,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-.rtLive-enter-active,
-.rtLive-leave-active {
-  transition: opacity 0.5s;
-}
-
-.rtLive-enter,
-.rtLive-leave-to {
-  opacity: 0;
 }
 </style>
