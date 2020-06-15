@@ -305,7 +305,7 @@ export function parse (
         closeElement(element)
       }
     },
-
+    // 遇到结束标签
     end (tag, start, end) {
       const element = stack[stack.length - 1]
       // pop stack
@@ -316,7 +316,7 @@ export function parse (
       }
       closeElement(element)
     },
-
+    // 遇到文本
     chars (text: string, start: number, end: number) {
       if (!currentParent) {
         if (process.env.NODE_ENV !== 'production') {
@@ -388,6 +388,7 @@ export function parse (
         }
       }
     },
+    // 遇到注释
     comment (text: string, start, end) {
       // adding anyting as a sibling to the root node is forbidden
       // comments should still be allowed, but ignored
