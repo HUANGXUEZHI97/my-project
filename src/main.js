@@ -12,6 +12,9 @@ Vue.prototype.$axios = axios
 import '@/icons';
 import './permission.js';
 
+import vPermission from '@/directive/permission';
+Vue.directive("permission", vPermission);
+
 new Vue({
   router,
   store,

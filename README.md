@@ -4,7 +4,8 @@
 
 使用了一些vue的最佳实践：
 1. 引入svg-sprite-loader，组件化引入svg图标
-2. 增加权限控制
+2. 增加路由权限控制
+3. 增加按钮权限控制
 
 ## Project setup
 ```
