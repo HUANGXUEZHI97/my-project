@@ -5,12 +5,12 @@ import router from '@/router';
 
 Vue.config.productionTip = false
 
-import './test-ts';
 
 import axios from 'axios';
 Vue.prototype.$axios = axios
 
-import '@/icons/index';
+import '@/icons';
+import './permission.js';
 
 new Vue({
   router,

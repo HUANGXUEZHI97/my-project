@@ -12,32 +12,22 @@
 
     <!-- 路由出口 -->
     <router-view />
-    <!-- <Hello msg="blabla~" @add-feature="OnAddFeature" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "./components/HelloWorld.vue";
-import Hello from "./components/Hello.vue";
 
-import { Feature } from "@/types";
 
 // import "@/icons/svg/bird.svg";
 // import "@/icons/svg/tree.svg";
 
-@Component({
+export default {
   components: {
-    HelloWorld,
-    Hello
+    HelloWorld
   }
-})
-export default class App extends Vue {
-  OnAddFeature(f: Feature) {
-    console.log("新增：" + f.name);
-  }
-}
+};
 </script>
 
 <style>
