@@ -33,6 +33,28 @@ export const asyncRoutes = [
       icon: "bird",
       roles: ['admin','editor']
     },
+    children:[
+      {
+        path: "info",
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/About.vue"),
+        meta: {
+          title: "花盆",
+          icon: "flowerpot",
+          roles: ['admin','editor']
+        },
+      },
+      {
+        path: "order",
+        component: () =>
+          import(/* webpackChunkName: "home" */ "@/views/About.vue"),
+        meta: {
+          title: "叶片",
+          icon: "blade",
+          roles: ['admin','editor']
+        },
+      }
+    ]
   }
 ];
 

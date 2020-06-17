@@ -6,6 +6,7 @@
 1. 引入svg-sprite-loader，组件化引入svg图标
 2. 增加路由权限控制
 3. 增加按钮权限控制
+4. 自动生成导航菜单
 
 ## Project setup
 ```

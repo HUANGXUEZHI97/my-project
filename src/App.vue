@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    
+    <Sidebar></Sidebar>
     <div id="nav">
       <router-link to="/">
         <svg-icon icon-class="tree" />Home
@@ -17,15 +19,16 @@
 </template>
 
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-
+import HelloWorld from "@/components/HelloWorld.vue";
+import Sidebar from "@/components/Sidebar/index.vue";
 
 // import "@/icons/svg/bird.svg";
 // import "@/icons/svg/tree.svg";
 
 export default {
   components: {
-    HelloWorld
+    HelloWorld,
+    Sidebar
   }
 };
 </script>
